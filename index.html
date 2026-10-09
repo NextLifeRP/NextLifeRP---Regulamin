@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Główny Regulamin Serwera | NextLifeRP</title>
+    <title>Regulamin Serwera | NextLifeRP</title>
     <style>
         :root {
             --bg-color: #0d0d0d;
@@ -34,6 +34,7 @@
             max-width: 400px;
             height: auto;
             margin-bottom: 20px;
+            mix-blend-mode: screen; /* Usuwa czarne tło z obrazka */
         }
         
         header h1 {
@@ -50,14 +51,14 @@
         
         .container {
             display: flex;
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 40px auto;
             padding: 0 20px;
             gap: 30px;
         }
         
         nav.sidebar {
-            flex: 0 0 300px;
+            flex: 0 0 320px;
             background-color: var(--card-bg);
             padding: 25px;
             border-radius: 10px;
@@ -83,14 +84,14 @@
         }
         
         nav.sidebar li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
         nav.sidebar a {
             color: #aaaaaa;
             text-decoration: none;
             transition: color 0.2s;
-            font-size: 0.95em;
+            font-size: 0.9em;
             display: block;
         }
         
@@ -115,13 +116,7 @@
             border-bottom: 2px solid #333;
             padding-bottom: 15px;
             margin-top: 0;
-            font-size: 2em;
-        }
-        
-        h3 {
-            color: #ffffff;
-            margin-top: 25px;
-            font-size: 1.3em;
+            font-size: 1.8em;
         }
         
         ul.rules-list {
@@ -130,9 +125,9 @@
         }
         
         ul.rules-list > li {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             position: relative;
-            padding-left: 50px;
+            padding-left: 35px;
         }
         
         ul.rules-list > li > strong.point {
@@ -140,9 +135,9 @@
             left: 0;
             top: 0;
             color: var(--accent-color);
-            font-size: 1.1em;
+            font-size: 1em;
             background: #222;
-            padding: 2px 8px;
+            padding: 2px 6px;
             border-radius: 4px;
         }
         
@@ -192,164 +187,486 @@
 
     <header>
         <img src="nextlife-logo-poziome.png" alt="NextLifeRP Logo">
-        <h1>Główny Regulamin Serwera</h1>
-        <p>Obszerny i szczegółowy zbiór zasad rozgrywki RolePlay (Wersja 2.0)</p>
+        <h1>REGULAMIN SERWERA</h1>
+        <p>Wersja: 1.0 | Status: Obowiązujący | Dotyczy: Wszystkich graczy serwera NextLifeRP</p>
     </header>
 
     <div class="container">
         
         <nav class="sidebar">
-            <h3>Spis Treści</h3>
+            <h3>SPIS TREŚCI</h3>
             <ul>
-                <li><a href="#s1">§ 1. Postanowienia Ogólne</a></li>
-                <li><a href="#s2">§ 2. Słowniczek i Pojęcia RP</a></li>
-                <li><a href="#s3">§ 3. Kreacja Postaci (CK / BW)</a></li>
-                <li><a href="#s4">§ 4. Komunikacja IC oraz OOC</a></li>
-                <li><a href="#s5">§ 5. Strefy Bezpieczne (Safe Zones)</a></li>
-                <li><a href="#s6">§ 6. Akcje Przestępcze i Organizacje</a></li>
-                <li><a href="#s7">§ 7. Porwania i Zakładnicy</a></li>
-                <li><a href="#s8">§ 8. Departament Policji (LSPD)</a></li>
-                <li><a href="#s9">§ 9. Służby Medyczne (EMS)</a></li>
-                <li><a href="#s10">§ 10. Pojazdy, Pościgi i Ruch Drogowy</a></li>
-                <li><a href="#s11">§ 11. Kary i Postanowienia Końcowe</a></li>
+                <li><a href="#s1">§1. Postanowienia ogólne</a></li>
+                <li><a href="#s2">§2. Zasady rozgrywki RolePlay</a></li>
+                <li><a href="#s3">§3. Podstawowe pojęcia</a></li>
+                <li><a href="#s4">§4. FailRP</a></li>
+                <li><a href="#s5">§5. MetaGaming</a></li>
+                <li><a href="#s6">§6. PowerGaming</a></li>
+                <li><a href="#s7">§7. RDM i VDM</a></li>
+                <li><a href="#s8">§8. New Life Rule</a></li>
+                <li><a href="#s9">§9. Value of Life / FearRP</a></li>
+                <li><a href="#s10">§10. Revenge Kill</a></li>
+                <li><a href="#s11">§11. Combat Log</a></li>
+                <li><a href="#s12">§12. IC i OOC</a></li>
+                <li><a href="#s13">§13. Odpowiedzialność za postać</a></li>
+                <li><a href="#s14">§14. Pojazdy i prowadzenie pojazdów</a></li>
+                <li><a href="#s15">§15. Policja, EMS i służby publiczne</a></li>
+                <li><a href="#s16">§16. Przestępstwa i działania grupowe</a></li>
+                <li><a href="#s17">§17. Zakładnicy i negocjacje</a></li>
+                <li><a href="#s18">§18. Broń i używanie przemocy</a></li>
+                <li><a href="#s19">§19. Komunikacja</a></li>
+                <li><a href="#s20">§20. Streamerzy i nagrywanie</a></li>
+                <li><a href="#s21">§21. Cheaty, wspomagacze i Bug Abuse</a></li>
+                <li><a href="#s22">§22. Handel i majątek</a></li>
+                <li><a href="#s23">§23. Nicki, postacie i nazwy</a></li>
+                <li><a href="#s24">§24. Reklama i promocja</a></li>
+                <li><a href="#s25">§25. Bezpieczeństwo konta</a></li>
+                <li><a href="#s26">§26. Zgłoszenia i skargi</a></li>
+                <li><a href="#s27">§27. Taryfikator kar</a></li>
+                <li><a href="#s28">§28. Recydywa i zwiększenie kary</a></li>
+                <li><a href="#s29">§29. Postanowienia końcowe</a></li>
             </ul>
         </nav>
 
         <main class="content">
             
             <section id="s1">
-                <h2>§ 1. Postanowienia Ogólne</h2>
+                <h2>§1. POSTANOWIENIA OGÓLNE</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">1.1</strong> Serwer NextLifeRP jest serwerem typu RolePlay opartym na platformie FiveM. Dołączając do naszej społeczności, bezwzględnie akceptujesz poniższy regulamin. Niewiedza nie zwalnia z odpowiedzialności, a tłumaczenie "nie wiedziałem" nie będzie brane pod uwagę przez administrację.</li>
-                    <li><strong class="point">1.2</strong> Podstawowym celem rozgrywki jest odgrywanie ról (RolePlay), tworzenie ciekawej fabuły i interakcja z innymi graczami na wysokim poziomie. Priorytetem jest czerpanie wspólnej radości z gry, a nie dążenie do zwycięstwa za wszelką cenę (tzw. bojówka).</li>
-                    <li><strong class="point">1.3</strong> Wymagany jest sprawny mikrofon o dobrej jakości. Zakazuje się używania modulatorów głosu, chyba że jest to fabularnie uzasadnione (np. rozmowa telefoniczna z porywaczem) i zgłoszone administracji.</li>
-                    <li><strong class="point">1.4</strong> Zakazuje się wykorzystywania błędów gry, bugów mapy, cheatów, modyfikacji ułatwiających rozgrywkę (np. customowe celowniki na ekranie, mody na przezroczyste ściany). Wykrycie jakichkolwiek wspomagaczy kończy się natychmiastowym, permanentnym banem (PermBan).</li>
-                    <li><strong class="point">1.5</strong> Kwestie sporne, oskarżenia o łamanie regulaminu czy błędy w grze należy zgłaszać wyłącznie poprzez system zgłoszeń (Ticket) na Discordzie. Zakazuje się przerywania akcji RP w celu kłótni OOC (np. mówienia "zaraz lecisz na wyspy z banem"). Akcję doprowadzamy do końca, a skargę składamy po jej zakończeniu.</li>
-                    <li><strong class="point">1.6</strong> Decyzja Administratora podczas interwencji na serwerze jest ostateczna i nie podlega dyskusji w danym momencie. Jeśli gracz nie zgadza się z decyzją, ma prawo odwołać się w odpowiednim dziale na Discordzie po opadnięciu emocji.</li>
-                    <li><strong class="point">1.7</strong> Administracja zastrzega sobie prawo do nałożenia kary na gracza za zachowania, które nie zostały bezpośrednio ujęte w tym regulaminie, ale jawnie psują rozgrywkę, szkodzą serwerowi lub naruszają zasady logiki i dobrego smaku.</li>
-                    <li><strong class="point">1.8</strong> Zakazane jest reklamowanie innych serwerów Discord, serwerów FiveM oraz jakichkolwiek stron trzecich, o ile nie zostały one zaakceptowane przez Zarząd. Działanie na szkodę serwera będzie surowo karane.</li>
+                    <li><strong class="point">1.</strong> Regulamin obowiązuje każdego gracza znajdującego się na serwerze NextLifeRP.</li>
+                    <li><strong class="point">2.</strong> Dołączenie na serwer oznacza akceptację obowiązującego regulaminu.</li>
+                    <li><strong class="point">3.</strong> Każdy gracz ma obowiązek znać podstawowe zasady rozgrywki.</li>
+                    <li><strong class="point">4.</strong> Nieznajomość regulaminu nie zwalnia z odpowiedzialności.</li>
+                    <li><strong class="point">5.</strong> Administracja ma prawo reagować na sytuacje, które negatywnie wpływają na rozgrywkę.</li>
+                    <li><strong class="point">6.</strong> Gracze zobowiązani są wykonywać polecenia administracji podczas interwencji.</li>
+                    <li><strong class="point">7.</strong> Zabrania się celowego utrudniania pracy administracji.</li>
+                    <li><strong class="point">8.</strong> Zabrania się wykorzystywania luk w regulaminie w celu obchodzenia jego zasad.</li>
+                    <li><strong class="point">9.</strong> W przypadku sytuacji nieopisanej w regulaminie ostateczną decyzję podejmuje administracja.</li>
+                    <li><strong class="point">10.</strong> Regulamin może zostać zmieniony przez zarząd NextLifeRP.</li>
+                    <li><strong class="point">11.</strong> Aktualna wersja regulaminu jest nadrzędna wobec wcześniejszych wersji.</li>
+                    <li><strong class="point">12.</strong> Każdy gracz zobowiązany jest zachowywać kulturę osobistą.</li>
                 </ul>
             </section>
 
             <section id="s2">
-                <h2>§ 2. Słowniczek i Pojęcia RP</h2>
+                <h2>§2. ZASADY ROZGRYWKI ROLEPLAY</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">2.1</strong> <span class="highlight">In Character (IC):</span> Wszystko, co dotyczy bezpośrednio Twojej postaci w świecie gry. To jest życie Twojej postaci, jej wiedza, jej znajomości i jej problemy.</li>
-                    <li><strong class="point">2.2</strong> <span class="highlight">Out of Character (OOC):</span> Wszystko, co dotyczy Ciebie jako gracza przed komputerem. Twoja wiedza z Discorda, z prawdziwego życia, z czatu na Twitchu to wiedza OOC.</li>
-                    <li><strong class="point">2.3</strong> <span class="highlight">Metagaming (MG):</span> Surowo zabronione wykorzystywanie w świecie IC informacji zdobytych drogą OOC. Przykłady: poznanie kogoś po ID nad głową, oglądanie streama policjanta i uciekanie w drugą stronę, informowanie kolegów na Discordzie (zamiast przez radio w grze) o tym, że jesteś pod ostrzałem.</li>
-                    <li><strong class="point">2.4</strong> <span class="highlight">Powergaming (PG):</span> Zmuszanie innej osoby do akcji RolePlay bez dania jej możliwości reakcji lub odgrywanie rzeczy niemożliwych dla człowieka. Przykład PG wymuszonego: "/me podchodzi, usypia go jednym ciosem i od razu zakuwa w kajdanki". Przykład PG nielogicznego: przyjmowanie 5 kul na klatkę piersiową i uciekanie sprintem przez płoty bez odegrania bólu.</li>
-                    <li><strong class="point">2.5</strong> <span class="highlight">Random Deathmatch (RDM):</span> Zaatakowanie (uderzenie, zadźganie, postrzelenie, zabicie) innego gracza bez żadnego wyraźnego powodu fabularnego (IC) oraz bez wcześniejszej i wyraźnej inicjacji słownej. Zanim kogoś zaatakujesz, musisz dać mu szansę na reakcję (np. "Poddaj się, ręce do góry albo strzelam!").</li>
-                    <li><strong class="point">2.6</strong> <span class="highlight">Vehicle Deathmatch (VDM):</span> Wykorzystanie pojazdu jako broni. Celowe rozjeżdżanie graczy, taranowanie aut przy ogromnych prędkościach (tzw. demolition derby) czy uderzanie w motocyklistów. Dopuszczalny jest delikatny PIT manewr przy ucieczce, ale uderzanie pieszego z prędkością 150 km/h to VDM.</li>
-                    <li><strong class="point">2.7</strong> <span class="highlight">Fear RP:</span> Twoja postać ma tylko jedno życie i ceni je ponad wszystko (Value of Life). Jeśli trzech uzbrojonych napastników celuje do Ciebie z broni, a Ty masz puste ręce, MUSISZ wykonywać ich polecenia. Nie możesz wyciągnąć broni i zacząć strzelać, nie możesz też zacząć uciekać sprintem, ignorując celujące w Ciebie lufy.</li>
-                    <li><strong class="point">2.8</strong> <span class="highlight">Cop Baiting:</span> Celowe prowokowanie służb porządkowych do pościgu lub interwencji bez większego podłoża fabularnego. Przykłady: kręcenie bączków przed komendą, palenie gumy na światłach obok radiowozu tylko po to, by policja zaczęła Cię gonić, bo Ci się nudzi.</li>
-                    <li><strong class="point">2.9</strong> <span class="highlight">Combat Logging (CL):</span> Wyjście z gry (np. przez alt+f4, wyrwanie kabla z internetu) w trakcie trwającej akcji RolePlay (np. uciekając przed policją, w trakcie napadu, czy leżąc nieprzytomnym). Jest to jedno z najsurowiej karanych przewinień (często skutkuje banem bez ostrzeżenia).</li>
-                    <li><strong class="point">2.10</strong> <span class="highlight">Revenge Kill (RK):</span> Zabicie lub zorganizowanie ataku na osobę, która wcześniej doprowadziła Twoją postać do stanu BW (utraty przytomności). Zgodnie z zasadą NLR zapominasz bezpośrednie okoliczności zdarzenia, więc nie masz prawa do natychmiastowej zemsty po wyjściu ze szpitala.</li>
+                    <li><strong class="point">1.</strong> Rozgrywka na NextLifeRP opiera się na odgrywaniu realistycznej postaci.</li>
+                    <li><strong class="point">2.</strong> Gracz powinien zachowywać się zgodnie z charakterem swojej postaci.</li>
+                    <li><strong class="point">3.</strong> Każda postać powinna posiadać własną historię oraz charakter.</li>
+                    <li><strong class="point">4.</strong> Zabrania się celowego niszczenia rozgrywki innym osobom.</li>
+                    <li><strong class="point">5.</strong> Wszystkie działania powinny mieć logiczne uzasadnienie w świecie gry.</li>
+                    <li><strong class="point">6.</strong> Gracz powinien brać pod uwagę konsekwencje swoich działań.</li>
+                    <li><strong class="point">7.</strong> Nie należy wykorzystywać mechanik gry w sposób niszczący klimat RP.</li>
+                    <li><strong class="point">8.</strong> Zabrania się wymuszania sytuacji, których druga osoba nie ma możliwości logicznie odegrać.</li>
+                    <li><strong class="point">9.</strong> Konflikty między postaciami nie powinny być przenoszone na relacje poza grą.</li>
+                    <li><strong class="point">10.</strong> Każdy gracz powinien dążyć do tworzenia ciekawej rozgrywki.</li>
+                    <li><strong class="point">11.</strong> Zabrania się celowego trollowania podczas poważnych akcji RP.</li>
                 </ul>
             </section>
 
             <section id="s3">
-                <h2>§ 3. Kreacja Postaci (CK / BW / NLR)</h2>
+                <h2>§3. PODSTAWOWE POJĘCIA</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">3.1</strong> Imiona i nazwiska postaci muszą być realistyczne (najlepiej w stylu amerykańskim lub europejskim). Zakazane jest tworzenie postaci o imionach postaci historycznych, sławnych aktorów, youtuberów, postaci z filmów, wulgarnych czy trollowych (np. "Wiadro Wiadrowski", "Snoop Dogg", "John Wick").</li>
-                    <li><strong class="point">3.2</strong> Twoja postać to nie Ty. Postać powinna mieć swoje wady, zalety, historię i cel w życiu. Zakazuje się bycia postacią typu "terminator", która niczego się nie boi, do wszystkich strzela i jest idealna. Odgrywaj strach, radość, smutek i ból.</li>
-                    <li><strong class="point">3.3</strong> <span class="highlight">Brutally Wounded (BW):</span> Stan krytyczny postaci, w którym traci ona przytomność (pojawia się czarny i biały ekran z odliczaniem). W tym stanie jesteś nieprzytomny - nie możesz rozmawiać na radiu, nie możesz dawać wskazówek kolegom. Możesz używać narracji /do w odpowiedzi na pytania medyków (np. "/do Ma rany postrzałowe na klatce piersiowej, wyczuwalne słabe tętno").</li>
-                    <li><strong class="point">3.4</strong> <span class="highlight">New Life Rule (NLR):</span> Gdy Twoja postać zostanie uratowana przez lekarza z BW lub respawnuje się w szpitalu po upływie czasu, traci pamięć z momentu zdarzenia. Nie pamiętasz, kto do Ciebie strzelał, jak zginąłeś, ani gdzie to dokładnie było. Zabraniamy powrotu na miejsce akcji, w której straciłeś przytomność, dopóki ta akcja się nie zakończy w całości dla wszystkich frakcji.</li>
-                    <li><strong class="point">3.5</strong> <span class="highlight">Character Kill (CK):</span> Ostateczna śmierć postaci. Uśmiercenie postaci oznacza bezpowrotną utratę majątku, domów, samochodów, pozycji we frakcji i konta bankowego. CK można wymusić na kimś poprzez odpowiedni wniosek (FCK - Force Character Kill) u administracji, poparty solidnymi dowodami IC. Gracz może również samodzielnie wykonać CK swojej postaci za zgodą administracji.</li>
-                    <li><strong class="point">3.6</strong> Zmiana tożsamości w szpitalu (tzw. operacja plastyczna zmieniająca wygląd z czarnoskórego na białego itp.) lub nagła zmiana głosu u tej samej postaci musi mieć mocne podłoże fabularne. Zmiana płci postaci po jej założeniu jest całkowicie zakazana.</li>
-                    <li><strong class="point">3.7</strong> Korupcja i przekazywanie majątku przed planowanym CK jest zakazane. Nie możesz przed zrobieniem sobie nowego konta przekazać wszystkich aut i milionów dolarów koledze, żeby "przechował" Ci to na nowe życie.</li>
+                    <li><strong class="point">IC</strong> — In Character. Wszystko, co dotyczy postaci oraz świata gry.</li>
+                    <li><strong class="point">OOC</strong> — Out of Character. Wszystko, co dotyczy gracza i rzeczy niezwiązanych bezpośrednio z postacią.</li>
+                    <li><strong class="point">MG</strong> — MetaGaming. Wykorzystywanie informacji zdobytych poza grą przez postać.</li>
+                    <li><strong class="point">PG</strong> — PowerGaming. Wymuszanie działań na innych graczach lub wykonywanie nierealistycznych czynności.</li>
+                    <li><strong class="point">FailRP</strong> — Zachowanie niezgodne z zasadami RolePlay lub logiką sytuacji.</li>
+                    <li><strong class="point">RDM</strong> — Zaatakowanie lub zabicie gracza bez odpowiedniej podstawy RP.</li>
+                    <li><strong class="point">VDM</strong> — Celowe używanie pojazdu jako broni bez odpowiedniego uzasadnienia RP.</li>
+                    <li><strong class="point">NLR</strong> — New Life Rule. Zasada dotycząca utraty pamięci postaci po określonych sytuacjach związanych ze śmiercią.</li>
+                    <li><strong class="point">RK</strong> — Revenge Kill. Powrót do sytuacji w celu zemsty po wcześniejszej śmierci lub przegranej.</li>
+                    <li><strong class="point">CL</strong> — Combat Log. Celowe opuszczenie serwera podczas trwającej sytuacji RP w celu uniknięcia jej konsekwencji.</li>
+                    <li><strong class="point">FearRP</strong> — FearRP / NVL. Obowiązek odgrywania strachu i odpowiedniego dbania o życie swojej postaci.</li>
+                    <li><strong class="point">Bug</strong> — Bug Abuse. Celowe wykorzystywanie błędów serwera w celu uzyskania korzyści.</li>
                 </ul>
             </section>
 
             <section id="s4">
-                <h2>§ 4. Komunikacja IC oraz OOC</h2>
+                <h2>§4. FAILRP</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">4.1</strong> Głównym kanałem komunikacji jest czat głosowy (Voice Chat) i obowiązują na nim wyłącznie zasady In Character (IC). Używanie zwrotów typu "muszę iść na kolację", "laguje mi gra", "spadły mi fpsy", "zaraz ci napiszę na discordzie" na czacie głosowym to FailRP (łamanie ciągłości RP).</li>
-                    <li><strong class="point">4.2</strong> Jeśli musisz wyjść, odegraj to IC: "zaczyna boleć mnie głowa, muszę pójść spać", "muszę załatwić sprawę na lotnisku (wylatuję)". Błędy techniczne określaj jako: "mam pajęczynę w oczach", "chyba mam jakieś zwidy", "zaciął mi się zamek w drzwiach" itp.</li>
-                    <li><strong class="point">4.3</strong> <span class="highlight">Komenda /me:</span> Służy do opisywania czynności wykonywanych przez Twoją postać, których nie odzwierciedlają animacje w grze. Przykłady: "/me wyciąga portfel z prawej kieszeni", "/me podaje dokumenty oficerowi". Pamiętaj o stronie trzeciej liczby pojedynczej.</li>
-                    <li><strong class="point">4.4</strong> <span class="highlight">Komenda /do:</span> Służy do opisywania stanu otoczenia, reakcji, lub zadawania pytań o stan innej postaci. Używamy jej TYLKO zgodnie z prawdą. Przykłady: "/do Zamek puścił?", "/do Na stole leży rozrzucona gotówka". Kłamanie na /do to Powergaming i surowo podlega karze.</li>
-                    <li><strong class="point">4.5</strong> Zabrania się nadużywania czatów lokalnych (/ooc, /b). Powinny być używane tylko w ostateczności (np. by zasygnalizować crash gry koledze).</li>
+                    <li><strong class="point">1.</strong> Zabrania się zachowań całkowicie nierealistycznych.</li>
+                    <li><strong class="point">2.</strong> Zabrania się ignorowania obrażeń, które powinny mieć wpływ na postać.</li>
+                    <li><strong class="point">3.</strong> Zabrania się prowadzenia pojazdu w sposób całkowicie niezgodny z sytuacją.</li>
+                    <li><strong class="point">4.</strong> Zabrania się wykonywania czynności niemożliwych dla normalnej osoby.</li>
+                    <li><strong class="point">5.</strong> Zabrania się celowego wykorzystywania mechanik gry do omijania RP.</li>
+                    <li><strong class="point">6.</strong> Zabrania się traktowania świata gry jak zwykłej gry arcade.</li>
+                    <li><strong class="point">7.</strong> Skoki, kolizje oraz inne zdarzenia powinny być odpowiednio odgrywane.</li>
+                    <li><strong class="point">8.</strong> Po poważnym wypadku należy uwzględnić jego konsekwencje.</li>
+                    <li><strong class="point">9.</strong> Zabrania się celowego niszczenia pojazdu bez odpowiedniego powodu RP.</li>
+                    <li><strong class="point">10.</strong> Powtarzające się FailRP może skutkować surowszą karą.</li>
                 </ul>
             </section>
 
             <section id="s5">
-                <h2>§ 5. Strefy Bezpieczne (Safe Zones)</h2>
+                <h2>§5. METAGAMING</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">5.1</strong> Strefa bezpieczna (Safe Zone - SZ) to miejsce, w którym bezwzględnie zakazane są jakiekolwiek działania przestępcze: porwania, okradanie graczy, strzelaniny, bójki, prowokowanie do walki i kradzież pojazdów.</li>
-                    <li><strong class="point">5.2</strong> Do najważniejszych stref bezpiecznych należą (strefa obejmuje budynek oraz jego najbliższy parking/plac): Szpitale i Kliniki (EMS), Komendy Policji (LSPD / Sheriff), Urząd Pracy, Urząd Miasta (Mennica/Sąd), Siedziba Mechanika, Siedziby firm taksówkarskich, Autokomisy i miejsca spawnu dla nowych graczy (np. lotnisko cywilne).</li>
-                    <li><strong class="point">5.3</strong> Jeżeli akcja przestępcza (np. pościg, wymiana ognia, porwanie) została zainicjowana POZA strefą bezpieczną, przeniesienie się tej akcji do strefy bezpiecznej NIE TARCZYZY przestępców ani ofiar. Ucieczka na teren komendy policji w trakcie bycia gonionym przez gangstera nie anuluje napadu, a strzelanina może być tam kontynuowana, jednak jest to uważane za ryzykowne.</li>
-                    <li><strong class="point">5.4</strong> Zostawianie otwartych aut pełnych nielegalnych przedmiotów na środku Safe Zone, aby uniknąć interwencji gangu/policji jest uznawane za FailRP (wykorzystywanie strefy niezgodnie z przeznaczeniem).</li>
-                    <li><strong class="point">5.5</strong> Czerwone strefy (Red Zones - np. zbiórki narkotyków, obszary gangowe) to miejsca o podwyższonym ryzyku. W tych strefach gracz z założenia spodziewa się ataku, jednak pełna inicjacja z odpowiednim czasem na reakcję jest nadal bezwzględnie wymagana.</li>
+                    <li><strong class="point">1.</strong> Zabrania się wykorzystywania informacji zdobytych poza grą.</li>
+                    <li><strong class="point">2.</strong> Informacje z Discorda, streamów, transmisji, czatu lub prywatnych rozmów nie mogą być wykorzystywane przez postać.</li>
+                    <li><strong class="point">3.</strong> Zabrania się oglądania transmisji innego gracza w celu zdobycia informacji o jego pozycji.</li>
+                    <li><strong class="point">4.</strong> Informacje uzyskane przez gracza nie oznaczają automatycznie, że posiada je jego postać.</li>
+                    <li><strong class="point">5.</strong> Zabrania się przekazywania informacji OOC swojej postaci poprzez kanały IC.</li>
+                    <li><strong class="point">6.</strong> Zabrania się rozpoznawania osoby wyłącznie na podstawie głosu, jeżeli postać nie miała możliwości jej wcześniej poznać.</li>
+                    <li><strong class="point">7.</strong> Zabrania się wykorzystywania informacji z paneli, logów lub innych systemów niedostępnych dla zwykłego gracza.</li>
+                    <li><strong class="point">8.</strong> Streamsniping traktowany jest jako forma MetaGamingu.</li>
                 </ul>
             </section>
 
             <section id="s6">
-                <h2>§ 6. Akcje Przestępcze i Organizacje</h2>
+                <h2>§6. POWERGAMING</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">6.1</strong> Aby założyć organizację przestępczą (gang, mafia, kartel), należy złożyć odpowiednie podanie na Discordzie w wyznaczonym do tego dziale i otrzymać akceptację opiekuna przestępczego.</li>
-                    <li><strong class="point">6.2</strong> Ubiór członków gangu powinien być ujednolicony i logiczny (np. ten sam kolor dominujący, barwy gangowe). Jazda w różowych majtkach z minigunem jest zakazana i kwalifikuje się pod FailRP.</li>
-                    <li><strong class="point">6.3</strong> Napady (sklepy, banki, jubiler): Limit osób uczestniczących w napadzie po stronie przestępców zależy od napadanego punktu: Sklep z ubraniami/Kiosk: Max 3 osoby; Sklep 24/7 (kasa): Max 4 osoby; Fleeca Bank (małe banki): Max 5 osób; Pacific Standard (główny bank) i Jubiler: Max 7 osób. Limitów tych nie wolno przekraczać pod żadnym pozorem, nie ma pojęcia "osoby zabezpieczającej z dachu".</li>
-                    <li><strong class="point">6.4</strong> Każda organizacja ma obowiązek zachowywania odpowiedniego poziomu RP (tzw. High RP). Gang uliczny z South Central nie zachowuje się i nie strzela z karabinów maszynowych snajperskich jak świetnie wyszkolone wojsko czy kartel.</li>
-                    <li><strong class="point">6.5</strong> Zabrania się tzw. "sojuszy mafijnych" podczas wielkich akcji na policję, np. dwie różne organizacje łączą się, aby napaść jeden bank w 15 osób. Każda organizacja gra na swoje konto.</li>
-                    <li><strong class="point">6.6</strong> Wjazd gangu na teren innego gangu (drive-by) musi mieć poważny powód fabularny i odbywa się po wcześniejszym konflikcie. Zabronione jest masowe, codzienne zajeżdżanie na dzielnice (tzw. bojówki osiedlowe).</li>
+                    <li><strong class="point">1.</strong> Zabrania się wymuszania działań na innych graczach.</li>
+                    <li><strong class="point">2.</strong> Gracz powinien pozostawić drugiej stronie możliwość odpowiedniej reakcji.</li>
+                    <li><strong class="point">3.</strong> Zabrania się automatycznego zakładania sukcesu własnego działania.</li>
+                    <li><strong class="point">4.</strong> Niedopuszczalne jest odgrywanie sytuacji w sposób uniemożliwiający drugiej osobie reakcję.</li>
+                    <li><strong class="point">5.</strong> Przykładem PowerGamingu jest wymuszenie określonego działania na innej postaci bez możliwości odpowiedzi.</li>
+                    <li><strong class="point">6.</strong> PowerGaming obejmuje również wykorzystywanie nierealistycznych mechanik gry.</li>
                 </ul>
             </section>
 
             <section id="s7">
-                <h2>§ 7. Porwania i Zakładnicy</h2>
+                <h2>§7. RDM I VDM</h2>
+                <p><strong>RDM</strong></p>
                 <ul class="rules-list">
-                    <li><strong class="point">7.1</strong> Zakładnikiem w napadzie może być każdy gracz cywilny, ale nie może być to osoba powiązana z rabusiami. Tzw. "Fake Zakładnik" (kolega z gangu udający zakładnika dla pieniędzy) jest całkowicie zabroniony, chyba że udowodnisz wybitne rozegranie fabularne.</li>
-                    <li><strong class="point">7.2</strong> Porywając kogoś do lasu czy opuszczonej fabryki z zamiarem zdobycia gotówki (okupu), porywacze muszą zaangażować w akcję policję, aby ci mieli szansę odbić poszkodowanego.</li>
-                    <li><strong class="point">7.3</strong> Osoba okradana i porwana (jeśli wykonuje w 100% polecenia porywaczy i zachowuje wzorowe FearRP) nie może zostać po akcji zabita dla "zatarcia śladów". Wyjątkiem są sytuacje, w których zakładnik zaczął obrażać oprawców lub posiada informacje, przez które w 100% zidentyfikuje gang (np. znał ich głosy i imiona). Wtedy postrzał ostrzegawczy i pozostawienie w lesie jest dopuszczalne.</li>
-                    <li><strong class="point">7.4</strong> Zabronione jest porywanie graczy spod Bankomatów, mechaników w pracy, lekarzy na służbie, oraz kurierów w trakcie dostarczania paczek w strefach chronionych.</li>
-                    <li><strong class="point">7.5</strong> Aby porwać policjanta (LSPD) w celach uzyskania okupu czy okupacji komendy, potrzebna jest obecność co najmniej 5 innych policjantów na służbie. Nie można porwać jedynego policjanta na wyspie.</li>
+                    <li><strong class="point">1.</strong> Zabrania się atakowania lub zabijania gracza bez odpowiedniego powodu RP.</li>
+                    <li><strong class="point">2.</strong> Konflikt powinien wynikać z wcześniejszej sytuacji lub logicznego powodu.</li>
+                    <li><strong class="point">3.</strong> Zabrania się zabijania przypadkowych osób dla zabawy.</li>
+                    <li><strong class="point">4.</strong> Zabójstwo powinno być odpowiednio uzasadnione sytuacją RP.</li>
+                </ul>
+                <p><strong>VDM</strong></p>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Pojazd nie może być używany jako broń bez odpowiedniego powodu.</li>
+                    <li><strong class="point">2.</strong> Zabrania się celowego rozjeżdżania graczy.</li>
+                    <li><strong class="point">3.</strong> Zabrania się celowego taranowania pojazdów w celu zadawania obrażeń.</li>
+                    <li><strong class="point">4.</strong> Przypadkowa kolizja nie jest automatycznie VDM.</li>
+                    <li><strong class="point">5.</strong> Celowe wielokrotne wykorzystywanie pojazdu do atakowania innych graczy może zostać potraktowane jako VDM.</li>
                 </ul>
             </section>
 
             <section id="s8">
-                <h2>§ 8. Departament Policji (LSPD / Sheriff)</h2>
+                <h2>§8. NEW LIFE RULE</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">8.1</strong> Funkcjonariusze są zobowiązani do przestrzegania wewnętrznego regulaminu LSPD, procedur zatrzymania, Mirandy, użycia taserów oraz broni ostrej (SOP). Złamanie procedur na serwerze to łamanie regulaminu, a nie tylko kodeksu departamentu.</li>
-                    <li><strong class="point">8.2</strong> Policjanci mają obowiązek cenić życie obywateli wyżej niż aresztowanie sprawców. Jeśli napastnik trzyma broń przy głowie zakładnika, policjant musi podjąć negocjacje, a nie wbiegać z bronią automatyczną ("no risk no fun" jest tutaj zakazane).</li>
-                    <li><strong class="point">8.3</strong> Służby porządkowe używają broni ostrej jako środka ostatecznego. Strzelanie do podejrzanego, który zaledwie ucieka na pieszo i nie wykazuje groźby utraty życia innych obywateli (np. jest bez broni), jest rygorystycznie karane jako RDM.</li>
-                    <li><strong class="point">8.4</strong> Korupcja w strukturach departamentu (sprzedawanie broni policyjnej, podawanie informacji gangom, przyjmowanie grubych łapówek) wymaga uzyskania zgody (tzw. "Bilet na Korupcję") od Administracji. Korupcja musi być odgrywana bardzo ostrożnie i subtelnie. Jawna i agresywna korupcja skutkuje degradacją i banem.</li>
-                    <li><strong class="point">8.5</strong> Przeszukiwanie bez powodu: Policjant potrzebuje uzasadnionego podejrzenia popełnienia przestępstwa, by przeszukać gracza. Wykonywanie przeszukań aut i bagaży "na oko" jest błędem RP.</li>
+                    <li><strong class="point">1.</strong> Po śmierci postać powinna respektować zasady dotyczące utraty pamięci.</li>
+                    <li><strong class="point">2.</strong> Postać nie powinna wracać bezpośrednio do miejsca swojej śmierci w celu kontynuowania sytuacji.</li>
+                    <li><strong class="point">3.</strong> Zabrania się wracania do wcześniejszej sytuacji wyłącznie w celu zemsty.</li>
+                    <li><strong class="point">4.</strong> Informacje zdobyte podczas poprzedniej sytuacji nie powinny być wykorzystywane po utracie pamięci.</li>
+                    <li><strong class="point">5.</strong> Szczegółowe zasady NLR mogą zostać określone przez administrację lub regulaminy frakcyjne.</li>
                 </ul>
             </section>
 
             <section id="s9">
-                <h2>§ 9. Służby Medyczne (EMS / MD)</h2>
+                <h2>§9. VALUE OF LIFE / FEARRP</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">9.1</strong> Ratownik medyczny jest nietykalny podczas pełnienia swoich obowiązków (w mundurze na służbie i w trakcie udzielania pomocy). Zabrania się strzelania do ratowników medycznych, porywania ich, kradzieży karetek na ich oczach, oraz brania ich jako zakładników.</li>
-                    <li><strong class="point">9.2</strong> Medyk, widząc trwającą strzelaninę, NIE WJEŻDŻA w sam jej środek. Obowiązuje go FearRP, czeka w bezpiecznej odległości, aż organy ścigania lub inne frakcje zabezpieczą teren.</li>
-                    <li><strong class="point">9.3</strong> Obowiązkiem medyka jest fachowe i klimatyczne odgrywanie leczenia (np. używając /me wyjmuje defibrylator, /do Akcja serca wraca). Leczenie bez ani jednego słowa lub użycia komend narracyjnych (tzw. "revive z przycisku i nara") to FailRP i powód do wyrzucenia z frakcji.</li>
-                    <li><strong class="point">9.4</strong> Medyk ma absolutny ZAKAZ bycia skorumpowanym (np. wynoszenie apteczek, bandaży dla mafii, wskrzeszanie tylko swoich znajomych i dobijanie obcych, przekazywanie informacji gangom o pacjentach leżących w szpitalu). EMS to frakcja całkowicie neutralna.</li>
-                    <li><strong class="point">9.5</strong> Wymuszanie leczenia u medyka lub LSPD przez gracza (np. stoisz i krzyczysz "ej zrevievuj mnie szybko, bo muszę biec naprawiać auto") jest srogim naruszeniem immersionu i PG. Gracz musi dostosować się do zaleceń i narracji lekarza (odegranie operacji, RTG, wypis ze szpitala).</li>
+                    <li><strong class="point">1.</strong> Gracz powinien dbać o życie swojej postaci.</li>
+                    <li><strong class="point">2.</strong> W sytuacji bezpośredniego zagrożenia życia należy odpowiednio odegrać strach.</li>
+                    <li><strong class="point">3.</strong> Zabrania się celowego podejmowania działań prowadzących do śmierci bez odpowiedniego powodu RP.</li>
+                    <li><strong class="point">4.</strong> Osoba posiadająca broń przy głowie powinna odpowiednio reagować na zagrożenie.</li>
+                    <li><strong class="point">5.</strong> Zabrania się traktowania śmierci postaci jako czegoś bez znaczenia.</li>
+                    <li><strong class="point">6.</strong> Każda sytuacja powinna być oceniana indywidualnie.</li>
                 </ul>
             </section>
 
             <section id="s10">
-                <h2>§ 10. Pojazdy, Pościgi i Ruch Drogowy</h2>
+                <h2>§10. REVENGE KILL</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">10.1</strong> Prędkość: W mieście i obszarze zabudowanym obowiązuje realistyczny styl jazdy, chyba że uciekasz w pościgu. Ciągłe pędzenie 250 km/h hypercarem przez centrum miasta (Non-RP Driving) będzie skutkować odebraniem pojazdu przez administrację lub karami.</li>
-                    <li><strong class="point">10.2</strong> Pojazdy off-road (SUV-y, Mastery, motocrossy) jako jedyne są przystosowane do jazdy w ciężkim terenie. Wjeżdżanie supersamochodem (np. Ferrari, Lamborghini z zerowym prześwitem) na szczyt góry Chiliad to klasyczny przykład Powergamingu (Fail Driving) i jest surowo karany.</li>
-                    <li><strong class="point">10.3</strong> Pit Maneuver (taranowanie taktyczne): LSPD może wykonywać manewry PIT tylko przy dogodnych warunkach i określonych prędkościach (zazwyczaj do ok. 120-130 km/h). Z kolei uciekający może wykonywać lekkie przepychanki, jednak uderzenie czołowe w radiowóz w trakcie lotu czy sprintu to VDM.</li>
-                    <li><strong class="point">10.4</strong> Kradzież pojazdów specjalnych, takich jak Czołgi wojskowe (jeśli się pojawią), Helikoptery policyjne, wozy strażackie bez powodu RP jest zakazana. Zabraniamy latania śmigłowcami bojowymi nad miastem przez cywilów, nawet jeśli uda im się taki zdobyć w ramach jakiegoś skryptu.</li>
-                    <li><strong class="point">10.5</strong> Wyskakiwanie (Drive-out): Wyskoczenie z auta jadącego powyżej 50 km/h bez odegrania potężnego bólu i obrażeń to PG. Jeśli uciekasz z pędzącego auta - padasz na ziemię, musisz odegrać połamane nogi lub minimum bardzo silne stłuczenia.</li>
+                    <li><strong class="point">1.</strong> Zabrania się dokonywania zemsty za wcześniejszą śmierć postaci.</li>
+                    <li><strong class="point">2.</strong> Po utracie pamięci związanej z daną sytuacją nie można wracać w celu odwetu.</li>
+                    <li><strong class="point">3.</strong> Zabrania się organizowania odwetu wyłącznie na podstawie informacji z poprzedniej sytuacji.</li>
+                    <li><strong class="point">4.</strong> Zemsta może być częścią dalszej historii wyłącznie wtedy, gdy istnieje logiczna podstawa RP i postać posiada odpowiednią wiedzę.</li>
                 </ul>
             </section>
 
             <section id="s11">
-                <h2>§ 11. Kary i Postanowienia Końcowe</h2>
+                <h2>§11. COMBAT LOG</h2>
                 <ul class="rules-list">
-                    <li><strong class="point">11.1</strong> Taryfikator Kar jest zależny od uznania administracji, ale standardowo przewiduje: 
-                        <br>- Ostrzeżenia na serwerze (Kicki/Warny) za mniejsze przewinienia lub nieporozumienia; 
-                        <br>- Bany tymczasowe (od 12 godzin do 7 dni) za celowe lub powtarzające się FailRP, PG, MG; 
-                        <br>- Bany permanentne bez możliwości apelacji za używanie oprogramowania trzeciego (cheaty), notoryczny mass-RDM, rozwalanie gospodarki serwera czy wysoce toksyczne zachowanie (obrażanie rodzin, dyskryminacja OOC).</li>
-                    <li><strong class="point">11.2</strong> Współdzielenie kont, sprzedawanie wirtualnej waluty za prawdziwe pieniądze poza oficjalnym serwerowym wsparciem, czy oferowanie aut z garażu innym graczom za przelewy BLIK, to naruszenie ToS i kończy się bezpowrotnym banem dla obu stron procederu.</li>
-                    <li><strong class="point">11.3</strong> Streamowanie (Twitch, YouTube) jest bardzo mile widziane na NextLifeRP, jednak stream-sniping (wykorzystywanie transmisji by dorwać streamera w grze IC) to z definicji MetaGaming najwyższego stopnia, skutkujący PermBanem. Streamerzy natomiast proszeni są o godne reprezentowanie serwera i ukrywanie chatu podczas poważnych akcji IC.</li>
-                    <li><strong class="point">11.4</strong> Omijanie kar (tworzenie nowych kont Steam/Rockstar/Discord po banie), tzw. Ban Evading, traktowane jest jako naruszenie najwyższego priorytetu bezpieczeństwa na serwerze.</li>
-                    <li><strong class="point">11.5</strong> Administracja NextLifeRP rezerwuje sobie prawo do ostatecznej interpretacji tego regulaminu, zmiany go w dowolnym momencie z uprzednim powiadomieniem graczy na kanale "Ogłoszenia" na Discordzie, oraz usuwania graczy jawnie niszczących przyjemną atmosferę społeczności, nawet w przypadkach prawnie "nieopisanych". Dbajmy razem o ten projekt.</li>
+                    <li><strong class="point">1.</strong> Zabrania się opuszczania serwera podczas aktywnej sytuacji RP w celu uniknięcia konsekwencji.</li>
+                    <li><strong class="point">2.</strong> Dotyczy to między innymi: zatrzymania, pościgu, napadu, strzelaniny, porwania, interwencji administracyjnej.</li>
+                    <li><strong class="point">3.</strong> Jeżeli gracz utraci połączenie z serwerem, powinien w miarę możliwości poinformować osoby uczestniczące w sytuacji.</li>
+                    <li><strong class="point">4.</strong> Celowe opuszczanie serwera może skutkować karą.</li>
+                    <li><strong class="point">5.</strong> Powtarzający się Combat Log może zostać potraktowany jako poważne przewinienie.</li>
                 </ul>
+            </section>
+
+            <section id="s12">
+                <h2>§12. IC I OOC</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Kanały IC służą wyłącznie do komunikacji związanej z postacią.</li>
+                    <li><strong class="point">2.</strong> Kanały OOC służą do komunikacji graczy.</li>
+                    <li><strong class="point">3.</strong> Zabrania się prowadzenia rozmów OOC w sytuacjach, w których niszczy to rozgrywkę.</li>
+                    <li><strong class="point">4.</strong> Problemy techniczne należy zgłaszać administracji.</li>
+                    <li><strong class="point">5.</strong> Konflikty OOC nie powinny wpływać na wydarzenia IC.</li>
+                    <li><strong class="point">6.</strong> Zabrania się wykorzystywania OOC do wywierania presji na innych graczy podczas RP.</li>
+                </ul>
+            </section>
+
+            <section id="s13">
+                <h2>§13. ODPOWIEDZIALNOŚĆ ZA POSTAĆ</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Gracz odpowiada za działania swojej postaci.</li>
+                    <li><strong class="point">2.</strong> Postać powinna posiadać logiczny charakter.</li>
+                    <li><strong class="point">3.</strong> Zabrania się zmieniania charakteru postaci wyłącznie w celu uzyskania korzyści.</li>
+                    <li><strong class="point">4.</strong> Historia postaci powinna być zgodna z realiami serwera.</li>
+                    <li><strong class="point">5.</strong> Zabrania się tworzenia postaci wyłącznie w celu trollowania innych.</li>
+                    <li><strong class="point">6.</strong> Gracz powinien liczyć się z konsekwencjami działań swojej postaci.</li>
+                    <li><strong class="point">7.</strong> CK oraz inne trwałe konsekwencje mogą być stosowane zgodnie z zasadami serwera.</li>
+                </ul>
+            </section>
+
+            <section id="s14">
+                <h2>§14. POJAZDY I PROWADZENIE POJAZDÓW</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Pojazdy należy prowadzić w sposób odpowiadający warunkom sytuacji.</li>
+                    <li><strong class="point">2.</strong> Zabrania się jazdy całkowicie niezgodnej z możliwościami pojazdu.</li>
+                    <li><strong class="point">3.</strong> Pojazdy terenowe mogą być wykorzystywane zgodnie z ich przeznaczeniem.</li>
+                    <li><strong class="point">4.</strong> Zabrania się celowego skakania pojazdem w celu uzyskania przewagi.</li>
+                    <li><strong class="point">5.</strong> Kolizje powinny być odpowiednio odgrywane.</li>
+                    <li><strong class="point">6.</strong> Po poważnym wypadku należy uwzględnić stan pojazdu i postaci.</li>
+                    <li><strong class="point">7.</strong> Zabrania się celowego taranowania innych uczestników ruchu bez uzasadnienia.</li>
+                    <li><strong class="point">8.</strong> Pojazdy służbowe powinny być wykorzystywane zgodnie z ich przeznaczeniem.</li>
+                    <li><strong class="point">9.</strong> Zabrania się wykorzystywania pojazdów w sposób niszczący rozgrywkę.</li>
+                </ul>
+            </section>
+
+            <section id="s15">
+                <h2>§15. POLICJA, EMS I SŁUŻBY PUBLICZNE</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Frakcje publiczne zobowiązane są do przestrzegania dodatkowych regulaminów frakcyjnych.</li>
+                    <li><strong class="point">2.</strong> Funkcjonariusze powinni działać zgodnie z procedurami swojej jednostki.</li>
+                    <li><strong class="point">3.</strong> EMS powinno odpowiednio odgrywać pomoc medyczną.</li>
+                    <li><strong class="point">4.</strong> Zabrania się celowego prowokowania służb bez powodu RP.</li>
+                    <li><strong class="point">5.</strong> Zabrania się wykorzystywania błędów służb do uzyskania nieuczciwej przewagi.</li>
+                    <li><strong class="point">6.</strong> Osoba zatrzymana powinna respektować sytuację RP.</li>
+                    <li><strong class="point">7.</strong> Ucieczka przed służbami powinna mieć logiczne uzasadnienie IC.</li>
+                    <li><strong class="point">8.</strong> Zabrania się bezpodstawnego atakowania funkcjonariuszy.</li>
+                    <li><strong class="point">9.</strong> Nadużycia ze strony frakcji mogą być zgłaszane administracji.</li>
+                    <li><strong class="point">10.</strong> Szczegółowe procedury służb mogą znajdować się w osobnych regulaminach.</li>
+                </ul>
+            </section>
+
+            <section id="s16">
+                <h2>§16. PRZESTĘPSTWA I DZIAŁANIA GRUPOWE</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Każde przestępstwo powinno mieć odpowiednią podstawę RP.</li>
+                    <li><strong class="point">2.</strong> Zabrania się rozpoczynania masowych strzelanin bez odpowiedniego powodu.</li>
+                    <li><strong class="point">3.</strong> Organizacje przestępcze zobowiązane są przestrzegać zasad serwera.</li>
+                    <li><strong class="point">4.</strong> Zabrania się losowego napadania na przypadkowych graczy.</li>
+                    <li><strong class="point">5.</strong> Napady powinny być przeprowadzane z zachowaniem zasad RP.</li>
+                    <li><strong class="point">6.</strong> Zabrania się wykorzystywania mechanik napadów do celowego trollowania.</li>
+                    <li><strong class="point">7.</strong> Konflikty pomiędzy organizacjami powinny posiadać odpowiednią podstawę IC.</li>
+                    <li><strong class="point">8.</strong> Administracja może wprowadzić dodatkowe limity dotyczące napadów, strzelanin i wojen organizacji.</li>
+                    <li><strong class="point">9.</strong> Masowe działania mogą wymagać zgody administracji, jeżeli przewidują to dodatkowe zasady serwera.</li>
+                </ul>
+            </section>
+
+            <section id="s17">
+                <h2>§17. ZAKŁADNICY I NEGOCJACJE</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Zakładnik powinien być traktowany jako element sytuacji RP.</li>
+                    <li><strong class="point">2.</strong> Zabrania się zabijania zakładnika bez odpowiedniego powodu.</li>
+                    <li><strong class="point">3.</strong> Zakładnik nie powinien być wykorzystywany wyłącznie do sztucznego wydłużania sytuacji.</li>
+                    <li><strong class="point">4.</strong> Negocjacje powinny być prowadzone w sposób logiczny.</li>
+                    <li><strong class="point">5.</strong> Zabrania się celowego łamania ustaleń bez odpowiedniego powodu IC.</li>
+                    <li><strong class="point">6.</strong> Osoby prowadzące negocjacje powinny mieć możliwość komunikowania się z drugą stroną.</li>
+                    <li><strong class="point">7.</strong> Wszystkie strony powinny respektować ustalone zasady sytuacji.</li>
+                </ul>
+            </section>
+
+            <section id="s18">
+                <h2>§18. BROŃ I UŻYWANIE PRZEMOCY</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Broń powinna być wykorzystywana zgodnie z sytuacją RP.</li>
+                    <li><strong class="point">2.</strong> Zabrania się wyciągania broni bez powodu.</li>
+                    <li><strong class="point">3.</strong> Zabrania się strzelania do przypadkowych osób.</li>
+                    <li><strong class="point">4.</strong> Każda strzelanina powinna posiadać odpowiednią podstawę RP.</li>
+                    <li><strong class="point">5.</strong> Zabrania się strzelania wyłącznie dla zabawy.</li>
+                    <li><strong class="point">6.</strong> Gracz powinien odpowiednio reagować na obrażenia.</li>
+                    <li><strong class="point">7.</strong> Zabrania się wykorzystywania błędów mechaniki broni.</li>
+                    <li><strong class="point">8.</strong> Użycie broni powinno być ostatecznością w sytuacjach, w których jest to możliwe.</li>
+                </ul>
+            </section>
+
+            <section id="s19">
+                <h2>§19. KOMUNIKACJA</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Zabrania się używania komunikacji do celowego zakłócania rozgrywki.</li>
+                    <li><strong class="point">2.</strong> Zabrania się puszczania głośnych dźwięków bez odpowiedniego powodu RP.</li>
+                    <li><strong class="point">3.</strong> Zabrania się odtwarzania treści mających na celu trollowanie innych.</li>
+                    <li><strong class="point">4.</strong> Komunikacja głosowa powinna być zrozumiała.</li>
+                    <li><strong class="point">5.</strong> Zabrania się celowego zagłuszania innych graczy.</li>
+                    <li><strong class="point">6.</strong> W sytuacjach RP należy unikać niepotrzebnego OOC.</li>
+                </ul>
+            </section>
+
+            <section id="s20">
+                <h2>§20. STREAMERZY I NAGRYWANIE</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Każdy gracz może nagrywać swoją rozgrywkę zgodnie z obowiązującymi zasadami.</li>
+                    <li><strong class="point">2.</strong> Zabrania się wykorzystywania transmisji innych osób do zdobywania informacji IC.</li>
+                    <li><strong class="point">3.</strong> Streamsniping jest zabroniony.</li>
+                    <li><strong class="point">4.</strong> Zabrania się celowego zakłócania transmisji.</li>
+                    <li><strong class="point">5.</strong> Zabrania się wykorzystywania transmisji do śledzenia pozycji gracza.</li>
+                    <li><strong class="point">6.</strong> Materiały nagrane podczas rozgrywki mogą być wykorzystywane jako dowody w sprawach administracyjnych.</li>
+                </ul>
+            </section>
+
+            <section id="s21">
+                <h2>§21. CHEATY, WSPOMAGACZE I BUG ABUSE</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Kategorycznie zabrania się korzystania z jakichkolwiek cheatów, wspomagaczy oraz niedozwolonych modyfikacji dających przewagę nad innymi graczami.</li>
+                    <li><strong class="point">2.</strong> Zabrania się korzystania między innymi z: Aimbota, Wallhacka, ESP, Triggerbota, Silent Aima, Speedhacka, Flyhacka, Godmode, niewidzialności, teleportacji, zmiany statystyk postaci, modyfikacji dających nieuczciwą przewagę.</li>
+                    <li><strong class="point">3.</strong> Zabrania się używania programów ingerujących w działanie FiveM, GTA V lub systemów zabezpieczających serwer.</li>
+                    <li><strong class="point">4.</strong> Zabrania się korzystania z injectorów, executorów oraz innych narzędzi służących do uruchamiania niedozwolonego kodu.</li>
+                    <li><strong class="point">5.</strong> Zabrania się celowego wykorzystywania błędów skryptów, ekonomii, pojazdów, przedmiotów lub innych systemów serwera.</li>
+                    <li><strong class="point">6.</strong> Każdy znaleziony poważny błąd należy zgłosić administracji.</li>
+                    <li><strong class="point">7.</strong> Wykorzystywanie błędu w celu uzyskania pieniędzy, przedmiotów, pojazdów lub innych korzyści może skutkować banem oraz resetem zdobytych korzyści.</li>
+                    <li><strong class="point">8.</strong> Zabrania się przekazywania informacji o błędach innym osobom w celu umożliwienia ich wykorzystywania.</li>
+                    <li><strong class="point">9.</strong> Zabrania się sprzedaży, udostępniania lub rozpowszechniania cheatów wśród graczy NextLifeRP.</li>
+                    <li><strong class="point">10.</strong> Zabrania się nakłaniania innych osób do korzystania z cheatów.</li>
+                    <li><strong class="point">11.</strong> Próba ukrycia korzystania z niedozwolonych programów może zostać potraktowana jako dodatkowe przewinienie.</li>
+                    <li><strong class="point">12.</strong> Administracja może wymagać dodatkowej weryfikacji w przypadku uzasadnionego podejrzenia korzystania z niedozwolonych programów.</li>
+                    <li><strong class="point">13.</strong> Odmowa współpracy podczas uzasadnionej kontroli może skutkować konsekwencjami administracyjnymi.</li>
+                    <li><strong class="point">14.</strong> W przypadku potwierdzonego korzystania z cheatów administracja może zastosować PERMANENTNĄ BLOKADĘ.</li>
+                    <li><strong class="point">15.</strong> W przypadku szczególnie poważnych przypadków administracja może zastosować również reset majątku oraz innych zdobytych korzyści.</li>
+                    <li><strong class="point">16.</strong> Próba obejścia blokady poprzez inne konto traktowana jest jako omijanie bana.</li>
+                </ul>
+            </section>
+
+            <section id="s22">
+                <h2>§22. HANDEL I MAJĄTEK</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Handel pomiędzy graczami powinien odbywać się zgodnie z zasadami serwera.</li>
+                    <li><strong class="point">2.</strong> Zabrania się oszustw oraz wyłudzania majątku.</li>
+                    <li><strong class="point">3.</strong> Zabrania się wykorzystywania błędów systemu ekonomicznego.</li>
+                    <li><strong class="point">4.</strong> Zabrania się tworzenia fikcyjnych transakcji w celu omijania zasad.</li>
+                    <li><strong class="point">5.</strong> Handel majątkiem serwerowym poza dozwolonymi systemami może być zabroniony.</li>
+                    <li><strong class="point">6.</strong> Administracja może cofnąć transakcję, jeżeli została dokonana z naruszeniem regulaminu.</li>
+                    <li><strong class="point">7.</strong> Próby przenoszenia majątku pomiędzy kontami w celu obejścia kar mogą skutkować dodatkowymi konsekwencjami.</li>
+                </ul>
+            </section>
+
+            <section id="s23">
+                <h2>§23. NICKI, POSTACIE I NAZWY</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Nazwa postaci powinna być zgodna z realiami RolePlay.</li>
+                    <li><strong class="point">2.</strong> Zabrania się używania nicków obraźliwych, wulgarnych lub prowokacyjnych.</li>
+                    <li><strong class="point">3.</strong> Nazwy postaci nie mogą zawierać treści rasistowskich, dyskryminujących ani nawołujących do nienawiści.</li>
+                    <li><strong class="point">4.</strong> Zabrania się podszywania pod administrację lub innych graczy.</li>
+                    <li><strong class="point">5.</strong> Zabrania się tworzenia postaci mających na celu wyłącznie trollowanie.</li>
+                    <li><strong class="point">6.</strong> Administracja może nakazać zmianę nicku lub nazwy postaci naruszającej regulamin.</li>
+                    <li><strong class="point">7.</strong> Imię i nazwisko postaci powinny być odpowiednie dla świata RP.</li>
+                </ul>
+            </section>
+
+            <section id="s24">
+                <h2>§24. REKLAMA I PROMOCJA</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Zabrania się reklamowania innych serwerów bez zgody administracji.</li>
+                    <li><strong class="point">2.</strong> Zabrania się wysyłania niezamówionych linków reklamowych.</li>
+                    <li><strong class="point">3.</strong> Zabrania się promowania cheatów, niedozwolonych usług oraz działań szkodzących społeczności.</li>
+                    <li><strong class="point">4.</strong> Reklama w kanałach Discorda musi być zgodna z zasadami danego kanału.</li>
+                    <li><strong class="point">5.</strong> Próby omijania zakazu reklamy mogą skutkować dodatkowymi karami.</li>
+                </ul>
+            </section>
+
+            <section id="s25">
+                <h2>§25. BEZPIECZEŃSTWO KONTA</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Każdy gracz odpowiada za bezpieczeństwo swojego konta.</li>
+                    <li><strong class="point">2.</strong> Zabrania się udostępniania konta w celu omijania kar.</li>
+                    <li><strong class="point">3.</strong> Zabrania się wykorzystywania innych kont do obchodzenia blokady.</li>
+                    <li><strong class="point">4.</strong> W przypadku podejrzenia przejęcia konta należy niezwłocznie poinformować administrację.</li>
+                    <li><strong class="point">5.</strong> Administracja może przeanalizować sytuację, jeżeli istnieje podejrzenie omijania bana.</li>
+                    <li><strong class="point">6.</strong> Próba obejścia blokady nałożonej na innym koncie może skutkować blokadą kolejnych kont.</li>
+                </ul>
+            </section>
+
+            <section id="s26">
+                <h2>§26. ZGŁOSZENIA I SKARGI</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Każdy gracz ma prawo zgłosić naruszenie regulaminu.</li>
+                    <li><strong class="point">2.</strong> Zgłoszenia powinny zawierać opis sytuacji oraz dostępne dowody.</li>
+                    <li><strong class="point">3.</strong> Zabrania się składania fałszywych zgłoszeń w celu zaszkodzenia innym graczom.</li>
+                    <li><strong class="point">4.</strong> Skargi na członków administracji powinny być kierowane do osoby wyższej rangą lub zarządu.</li>
+                    <li><strong class="point">5.</strong> Zabrania się wywierania presji na administrację w celu wymuszenia określonej decyzji.</li>
+                    <li><strong class="point">6.</strong> Administracja może poprosić o dodatkowe materiały niezbędne do rozpatrzenia sprawy.</li>
+                    <li><strong class="point">7.</strong> Publikowanie prywatnych danych innych graczy bez zgody jest zabronione.</li>
+                    <li><strong class="point">8.</strong> Decyzja administracji może zostać ponownie rozpatrzona, jeżeli pojawią się nowe dowody.</li>
+                </ul>
+            </section>
+
+            <section id="s27">
+                <h2>§27. TARYFIKATOR KAR</h2>
+                <p>Kary są nakładane w zależności od rodzaju przewinienia, jego skali, intencji gracza oraz wcześniejszych naruszeń.</p>
+                <p><strong>Podstawowe przewinienia:</strong></p>
+                <ul>
+                    <li>FailRP — 12–48 godzin</li>
+                    <li>MetaGaming (MG) — 24–72 godziny</li>
+                    <li>PowerGaming (PG) — 24–72 godziny</li>
+                    <li>Brak kultury na LOOC — 12–24 godziny</li>
+                    <li>Spam / Flood — 6–24 godziny</li>
+                    <li>Obrażanie graczy — 24–72 godziny</li>
+                    <li>FearRP / NVL — 24–72 godziny</li>
+                </ul>
+                <p><strong>Poważne przewinienia RP:</strong></p>
+                <ul>
+                    <li>RDM — 2–7 dni</li>
+                    <li>VDM — 2–7 dni</li>
+                    <li>Combat Log — 2–7 dni</li>
+                    <li>Unikanie akcji RP — 2–7 dni</li>
+                    <li>FailRP podczas akcji — 2–7 dni</li>
+                    <li>Celowe psucie akcji RP — 3–14 dni</li>
+                    <li>Revenge Kill — 2–7 dni</li>
+                    <li>Celowe trollowanie — 1–7 dni</li>
+                </ul>
+                <p><strong>Cheaty i poważne nadużycia:</strong></p>
+                <ul>
+                    <li>Korzystanie z cheatów — permanentny ban</li>
+                    <li>Aimbot / Wallhack / ESP — permanentny ban</li>
+                    <li>Speedhack / Flyhack / Godmode — permanentny ban</li>
+                    <li>Wykorzystywanie exploitów do zdobywania majątku — 7 dni – permanentny ban oraz możliwość resetu majątku</li>
+                    <li>Omijanie bana — permanentny ban na kolejne konto</li>
+                    <li>Masowe RDM / VDM — 7–30 dni lub permanentny ban</li>
+                    <li>Celowe działanie na szkodę serwera — 7 dni – permanentny ban</li>
+                    <li>Podszywanie się pod administrację — 3–14 dni, a w poważnych przypadkach permanentny ban</li>
+                </ul>
+                <p><strong>Dodatkowe zasady karania:</strong></p>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Taryfikator określa standardowy zakres kar, ale nie wyklucza indywidualnej oceny sytuacji.</li>
+                    <li><strong class="point">2.</strong> Administracja może zastosować niższą karę w przypadku drobnego przewinienia i współpracy gracza.</li>
+                    <li><strong class="point">3.</strong> Poważne, celowe lub powtarzające się naruszenia mogą skutkować karą z górnej granicy taryfikatora.</li>
+                    <li><strong class="point">4.</strong> Potwierdzone korzystanie z cheatów może skutkować permanentną blokadą niezależnie od wcześniejszej historii gracza.</li>
+                    <li><strong class="point">5.</strong> Administracja może cofnąć korzyści zdobyte w wyniku oszustwa lub wykorzystywania błędów.</li>
+                    <li><strong class="point">6.</strong> Każda kara powinna mieć uzasadnienie w regulaminie.</li>
+                </ul>
+            </section>
+
+            <section id="s28">
+                <h2>§28. RECYDYWA I ZWIĘKSZENIE KARY</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Powtarzanie tego samego przewinienia może skutkować zwiększeniem kary.</li>
+                    <li><strong class="point">2.</strong> Kolejne naruszenie regulaminu może zostać potraktowane surowiej niż pierwsze.</li>
+                    <li><strong class="point">3.</strong> Celowe łamanie kilku zasad podczas jednej sytuacji może skutkować nałożeniem kary za najpoważniejsze przewinienie lub kilku kar, jeżeli jest to uzasadnione.</li>
+                    <li><strong class="point">4.</strong> Próby unikania odpowiedzialności, ukrywania dowodów lub omijania bana mogą zwiększyć konsekwencje.</li>
+                    <li><strong class="point">5.</strong> Administracja bierze pod uwagę skalę przewinienia, jego skutki oraz historię kar gracza.</li>
+                    <li><strong class="point">6.</strong> Gracz ma prawo odwołać się od kary, przedstawiając rzeczowe argumenty i dowody.</li>
+                </ul>
+            </section>
+
+            <section id="s29">
+                <h2>§29. POSTANOWIENIA KOŃCOWE</h2>
+                <ul class="rules-list">
+                    <li><strong class="point">1.</strong> Regulamin obowiązuje od momentu jego opublikowania.</li>
+                    <li><strong class="point">2.</strong> Każdy gracz zobowiązany jest do zapoznawania się z aktualnymi zasadami.</li>
+                    <li><strong class="point">3.</strong> Zarząd NextLifeRP ma prawo wprowadzać zmiany i dodatkowe zasady.</li>
+                    <li><strong class="point">4.</strong> W sytuacjach wyjątkowych administracja może podjąć indywidualną decyzję, uwzględniając okoliczności zdarzenia.</li>
+                    <li><strong class="point">5.</strong> Regulamin nie może być wykorzystywany do celowego obchodzenia zasad RolePlay.</li>
+                    <li><strong class="point">6.</strong> Każdy gracz powinien dbać o dobrą atmosferę i rozwój społeczności.</li>
+                    <li><strong class="point">7.</strong> Dołączenie do serwera oznacza akceptację regulaminu.</li>
+                    <li><strong class="point">8.</strong> Złamanie regulaminu może skutkować konsekwencjami administracyjnymi.</li>
+                    <li><strong class="point">9.</strong> Ostateczna interpretacja regulaminu należy do zarządu NextLifeRP.</li>
+                </ul>
+                <p style="text-align: center; font-weight: bold; margin-top: 30px; font-size: 1.2em; color: var(--accent-color);">NextLifeRP — Twoja postać. Twoja historia. Twój wybór.</p>
             </section>
         </main>
     </div>
