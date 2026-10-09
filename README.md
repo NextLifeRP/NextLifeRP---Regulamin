@@ -1,1 +1,1 @@
-# NextHubRP---Regulamin
+# NextLifeRP---Regulamin
